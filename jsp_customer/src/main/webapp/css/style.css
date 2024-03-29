@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* 초기화 태그 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit; /*부모태그의 컬러를 상속받아서 사용*/
+	cursor: pointer;
+}
+
+/* 공통 */
+
+.bt_wrap {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 0;
+}
+
+.bt_wrap a {
+	display: inline-block;
+	min-width: 80px; /* 80px보다 작아질수 없다. */
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 2px;
+	font-size: 1.4rem; /* 1.4배 */
+	text-align: center;
+}
+
+.bt_wrap a:hover {
+	text-decoration: underline;
+}
+
+.bt_wrap a.on { /* a태그 이면서 on 클래스를 가진 */
+	background: #000;
+	color: #fff;
+}
+
+/*  index  */
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.customer_list {
+	width: 1000px;
+	border-top: 1px solid #444444;
+	border-collapse: collapse;
+	font-size: 1.5rem;
+}
+
+.caption {
+	padding: 30px;
+}
+
+.customer_list th, .customer_list td {
+	border-bottom: 1px solid #444444;
+	padding: 10px;
+	text-align: center;
+}
+
+.customer_list td.title > a:hover {
+	text-decoration: underline;
+}
+
+.customer_page {
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.customer_page a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	box-sizing: border-box;
+	line-height: 32px;
+}
+
+.customer_page a:hover {
+	text-decoration: underline;
+}
+
+.customer_page a.bt {
+	font-size: 1.2rem;
+	letter-spacing: -1px;
+}
+
+.customer_page a.num {
+	font-size: 1.4rem;
+}
+
+.customer_page a.num.on {
+	border-color: #000;
+	background: white;
+	color: #fff;
+}
+
+/* write.jsp */
+
+.customer_title {
+	text-align-last: center;
+	font-size: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.customer_warp {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.customer_write {
+	text-align: -webkit-center
+}
+
+.name {
+	font-size: 15px;
+}
+
+.address {
+	font-size: 15px;
+}
+
+.phone {
+	font-size: 15px;
+}
+
+.age {
+	font-size: 15px;
+}
+
+.point {
+	font-size: 15px;
+}
+
+.grade {
+	font-size: 15px;
+}
+
+.gender {
+	place-content: center;
+	font-size: 15px;
+}
+
+.row {
+	place-content: center;
+}
+
+.all_info {
+	color: white;
+	max-width: 600x;
+   padding-top:10px;
+   background-color: rgba(0, 0, 0, 80%);
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 400px;
+   height: 300px;
+   text-align: -webkit-center;
+}
+
+.all_info > div {
+	margin-bottom: 8px;
+}
+
+.bt_wrap {
+	margin-top: 20px;
+}
+
+/*  view.jsp */
+
+.ct_view {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.ct_view1 {
+	font-size: 20px;
+	text-align-last: center;
+	margin-bottom: 30px;
+	padding-top: 20px;
+}
+
+.ct_title {
+	display: flex;
+	place-content: center;
+}
+
+.sub_title {
+	margin-top: 10px;
+}
+
+.sub_title > dl {
+	margin-top: 5px;
+	font-size: 2rem;
+}
+
+.delete {
+	position: absolute;
+	right:0; 
+	margin-right: 100px;
+	font-size: 14px;
+	border: 1px solid;
+	padding: 5px;
+}
+
+.delete a:hover {
+	text-decoration: underline;
+}
+
+.all {
+	color: white;
+	max-width: 600x;
+   padding-top:10px;
+   background-color: rgba(0, 0, 0, 80%);
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 400px;
+   height: 450px;
+   text-align: -webkit-center;
+   margin: 0 auto;
+}
+
+.bt {
+	padding-top: 20px;
+	color: white;
+}
+
+.dd {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
